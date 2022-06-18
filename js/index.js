@@ -1,0 +1,1 @@
+window.onload = fetch_all_data();

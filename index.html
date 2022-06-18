@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleBlog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/blog.css">
+
+</head>
+
+<body>
+    <section class="insert-blog">
+        <div class="container">
+            <h1 class="heading">Post a blog</h1>
+
+            <hr>
+
+            <div class="form">
+                <div class="column form-group">
+                    <label class="form-label" for="username">Name</label>
+                    <input class="form-input" type="text" value="Anonymous" placeholder="Enter your name"
+                        name="username" id="username" />
+                </div>
+                <div class="column form-group">
+                    <label class="form-label" for="title">Title of post</label>
+                    <input class="form-input" type="text" placeholder="Enter title of your post" name="title"
+                        id="title" />
+                </div>
+                <div class="column form-group">
+                    <label class="form-label" for="description">Content</label>
+                    <textarea class="form-input" placeholder="Write something here ..." name="description"
+                        id="description"></textarea>
+                </div>
+                <div class="row form-group">
+                    <button class="form-btn btn-success" id="post">Post</button>
+                    <button class="form-btn btn-info" id="clear">Clear</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section class="read-blog">
+        <div class="container">
+            <div class="row justify-between group">
+                <h1 class="heading">All blogs</h1>
+                <button class="btn-info" id="refresh">Refresh</button>
+            </div>
+
+            <hr>
+
+            <div id="blogs">
+            </div>
+    </section>
+
+
+    <script src="./js/constant.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
